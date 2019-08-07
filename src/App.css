@@ -1,6 +1,11 @@
+html,body{
+  margin:0;
+  padding:0;
+}
+
 .App {
   text-align: center;
-  margin: 0%;
-  padding: 0%;
-  flex: 1;
+  margin: auto;
+  padding: auto;
+ 
 }

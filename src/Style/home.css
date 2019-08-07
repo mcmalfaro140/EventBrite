@@ -1,0 +1,28 @@
+.homeContainer {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 60vh;
+}
+
+.slogan {
+    font-size: 400%;
+    font-weight: 600;
+    float: left;
+    padding: 3%;
+    padding-left: 100px;
+    flex: 1;
+}
+.footer {
+    color: white;
+    background-image: linear-gradient(to bottom right, #43cbff, #9708cc); 
+    font-size: 200%;
+    padding: 5%;
+    margin-top: 5%;
+}
+.question{
+    font-size: 200%
+}

@@ -1,0 +1,11 @@
+.eventListContainer {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    width: 90vw;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    
+}
