@@ -1,0 +1,36 @@
+.checkContainer {
+    margin-top: 2%
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%
+}
+.total {
+    color: green;
+    padding: 0%;
+}
+.header {
+    text-align: left;
+    padding: 0%;
+    margin-left: 25%;
+    margin-top: 5% ;
+   
+}
+.cardDrop {
+    text-align: left;
+    width: 30%;
+    
+}
+.cardInput {
+    width: 30%
+}
+.shortInput {
+    width: 15%
+}
+
+input {
+    height: 20px;
+    padding: 1%
+}

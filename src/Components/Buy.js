@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Style/buy.css'
-import NavBar from '../Components/navbar'
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 
@@ -13,7 +12,6 @@ class Buy extends React.Component {
     render() { 
         return (  
             <div>
-                <NavBar></NavBar>
                 <div className="buyContainer">
                     <h1>Taco Event</h1>
                     <div className="options">
