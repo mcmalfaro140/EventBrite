@@ -1,5 +1,5 @@
 .navContainer {
-    background-color: #ffffff;
+    background-image: linear-gradient(to right,#000000, #E84393) ;
     height: 9vh;
     position: sticky;
     top: 0;
@@ -24,7 +24,7 @@ li i {
     font-size: 200%;
     text-align: center;
     padding: 14px 0px;   
-    color: black;
+    color: white;
     
 }
 
@@ -35,8 +35,12 @@ a{
     text-align: center;
     padding: 14px 10px; 
     padding-right: 30px;  
-    color: black;
+    color: white;
     
+}
+
+a:hover {
+    color: orangered;
 }
 
 .navTitle {

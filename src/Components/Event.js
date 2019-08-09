@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Style/event.css'
+import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
 
 class Event extends React.Component {
     state = {  }
@@ -7,21 +9,25 @@ class Event extends React.Component {
         return ( 
             <div className="eventContainer">
                 <div className="imgDiv">
-                    <img src={require('../img/tacos.jpg')}/>
-                    </div>
+                    <img src={this.props.myevent.image}/>
+                </div>
                 <div className="infoDiv">
                     <div className="date">AUG 10</div>
                     <div className="event">
-                        <h3>LA Taco & Beers Festival '19</h3>
-                        <p>Sat, Aug 10, 3:00pm</p>
-                        <p>LA Center Studios, Los Angeles, CA</p>
-                        <p>Starts at $39.00</p>
+                        <h3>{this.props.myevent.title}</h3>
+                        <p>{this.props.myevent.Date}</p>
+                        <p>{this.props.myevent.Location}</p>
+                        <p>{this.props.myevent.Price}</p>
                     </div>
                 </div>
-                <button className="getButton">Get Tickets</button>
+                <Link to={{ pathname:"/buy", state: {event: this.props.myevent}}}><button className="getButton">Get Tickets</button></Link>
             </div> 
         );
     }
+}
+
+Event.propTypes = {
+    myevent: PropTypes.object.isRequired
 }
  
 export default Event;

@@ -2,6 +2,7 @@ import React from 'react'
 import '../Style/checkout.css'
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
+import { Link } from 'react-router-dom'
 
 const cards = ['Visa', 'MasterCard', 'American Express', 'Discovery'];
 
@@ -10,8 +11,8 @@ class Checkout extends React.Component {
     render() { 
         return ( 
             <div className="checkContainer">
-                <h1 >Taco Event</h1>
-                <h1 >Your total is: <span className="total">US$ 30</span></h1>
+                <h1 >{this.props.location.state.title}</h1>
+                <h1 >Your total is: <span className="total">US$ {this.props.location.state.total}</span></h1>
 
                 <div>
                     <h2 className="header">Your Info:</h2>
@@ -53,8 +54,8 @@ class Checkout extends React.Component {
                     </div>
                     
                 </div>
-                <button className="btn">Go Back Home</button>
-                <button className="btn">Pay US$ 30</button>
+                <Link to="/buy" className="btn">Go Back</Link>
+                <Link to="/confirmation" className="btn">Pay US$ {this.props.location.state.total}</Link>
             </div>
          );
     }
