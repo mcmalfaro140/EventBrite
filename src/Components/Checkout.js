@@ -54,7 +54,7 @@ class Checkout extends React.Component {
                     </div>
                     
                 </div>
-                <Link to="/buy" className="btn">Go Back</Link>
+                <Link to="/" className="btn">Go Back Home</Link>
                 <Link to="/confirmation" className="btn">Pay US$ {this.props.location.state.total}</Link>
             </div>
          );
