@@ -1,4 +1,6 @@
 import React from 'react'
+
+//simple 404 component used by the router for those pages that are not found
 class brokenLink extends React.Component {
     state = {  }
     render() { 

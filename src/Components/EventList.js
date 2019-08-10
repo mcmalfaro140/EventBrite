@@ -4,6 +4,7 @@ import Event from '../Components/Event'
 import PropTypes from 'prop-types'
 
 
+// this componet will loop thru myEvnts and will create as much Event components as needed
 class EventList extends React.Component {
     
     render() { 
@@ -18,6 +19,7 @@ class EventList extends React.Component {
     }
 }
 
+//checks for props 
 EventList.propTypes = {
     myEvents: PropTypes.array.isRequired
 }

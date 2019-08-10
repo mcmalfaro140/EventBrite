@@ -12,7 +12,7 @@ class Event extends React.Component {
                     <img src={this.props.myevent.image}/>
                 </div>
                 <div className="infoDiv">
-                    <div className="date">AUG 10</div>
+                    <div className="date">{this.props.myevent.shortDate}</div>
                     <div className="event">
                         <h3>{this.props.myevent.title}</h3>
                         <p>{this.props.myevent.Date}</p>
@@ -26,6 +26,7 @@ class Event extends React.Component {
     }
 }
 
+//Checks that props are passed otherwise the class will not be render
 Event.propTypes = {
     myevent: PropTypes.object.isRequired
 }

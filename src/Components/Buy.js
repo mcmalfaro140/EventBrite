@@ -4,27 +4,35 @@ import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import { Link } from 'react-router-dom'
 
+//options for the dropdown menu
 const options = [0,1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 class Buy extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedGeneral: 0,
-            selectedVip: 0,
-            price: 0
+            selectedGeneral: 0, //price of general
+            selectedVip: 0, //price of vip
+            price: 0 // total price
         }
         this.onSelectGeneral = this.onSelectGeneral.bind(this);
         this.onSelectVip = this.onSelectVip.bind(this);
       }
 
     
+      //function for when the user selects a nnumber from the dropdown menu
+      //general price
     onSelectGeneral (option) {
+        //the temp value is use to store the total price
+        //it's calculated by multiplying the total number of tickets times the price
+        // and then adds both results
         let temp = (parseInt(option.label) * parseInt(this.props.location.state.event.general)) + (parseInt(this.state.selectedVip) * parseInt(this.props.location.state.event.vip) );
+        //set the temp variable to the total price and the label to the dropdown
         this.setState({selectedGeneral: option.label, price: temp});
         
     }
-
+      //function for when the user selects a nnumber from the dropdown menu
+      //Vip price
     onSelectVip (option) {
         let temp = (parseInt(option.label) * parseInt(this.props.location.state.event.vip)) + (parseInt(this.state.selectedGeneral) * parseInt(this.props.location.state.event.general) );
         this.setState({selectedVip: option.label, price: temp})
@@ -32,7 +40,7 @@ class Buy extends React.Component {
 
     
     render() { 
-        
+        //If the event is free, this is what the app is gonna render
         if(this.props.location.state.event.isfree === true) {
             return (  
                 <div>
@@ -52,6 +60,7 @@ class Buy extends React.Component {
                 </div>
             );
 
+        //Otherwise; that means that there is a price, so the app is going to render this
         }else{
             return (  
                 <div>

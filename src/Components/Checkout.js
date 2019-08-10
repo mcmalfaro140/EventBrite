@@ -4,8 +4,11 @@ import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import { Link } from 'react-router-dom'
 
+//option for the dropdown box
 const cards = ['Visa', 'MasterCard', 'American Express', 'Discovery'];
 
+
+//no validation has been added to the values yet.
 class Checkout extends React.Component {
     state = {  }
     render() { 

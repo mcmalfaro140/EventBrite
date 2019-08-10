@@ -2,6 +2,9 @@ import React from 'react'
 import '../Style/confirmation.css'
 import { Link } from 'react-router-dom'
 
+//Simple confirmation page
+//Ramdon number generator still needs to be add.
+//As well as a function to check that the confirmation number does not match to another purchase.
 class Confirmation extends React.Component {
     state = {  }
     render() { 

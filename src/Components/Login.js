@@ -18,19 +18,26 @@ class Login extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.dismissError = this.dismissError.bind(this);
       }
-    
+    //set error string back to empty
       dismissError() {
         this.setState({ error: '' });
       }
-    
+    //handle the form submit
       handleSubmit(e) {
         e.preventDefault();
-    
+
+        //makes sure that the user input is not empty before submitting
         if (!this.state.username) {
           return this.setState({ error: 'Username is required' });
-        }else if (!this.state.password) {
+        }
+        //makes sure that the password input is not empty before submitting
+        else if (!this.state.password) {
           return this.setState({ error: 'Password is required' });
-        }else {
+        }
+        //Authentificate the user and password
+        //if they match then it sends the user back home;
+        //otherwise, it displays an error.
+        else {
             this.props.data.users.forEach(element => {
                 if(element.user === this.state.username && element.pass === this.state.password){
                     this.setState({ auth: true})
@@ -59,6 +66,8 @@ class Login extends React.Component {
       }
     
     render() { 
+      //Still under development
+      //If user has signed in already, it renders a different componet 
         if(this.props.data.isloggedin != true){
             return ( 
                 <div>
