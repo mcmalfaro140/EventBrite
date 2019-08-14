@@ -1,8 +1,6 @@
-
-
 .innerDiv {
    background-color: white;
-   margin: 5% 25%;
+   margin: 15% 5%;
    border: 2px solid black;
    border-radius: 25px;
 }
@@ -13,11 +11,10 @@
     justify-content: center;
     padding: 1%;
     font-size: 175%;
-    margin-left: %
 }
 
 .eventLogo {
-    width: 10%;
+    width: 15%;
 }
 
 .avatar {
@@ -57,4 +54,19 @@
 .error {
     color: red;
     font-size: 120%
+}
+
+/*Tablet view*/
+@media only screen and (min-width: 768px) {}
+/*Desktop view*/
+@media only screen and (min-width: 1033px){
+    .innerDiv {
+        margin: 5% 25%;
+        
+     }
+     .eventLogo {
+         width: 10%;
+     }
+     
+   
 }

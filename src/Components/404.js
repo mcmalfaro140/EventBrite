@@ -6,7 +6,7 @@ class brokenLink extends React.Component {
     render() { 
         return ( 
             <div>
-                <img style={{width: '60%'}} src={require('../img/dead_link.jpg')}></img>
+                <img style={{width: '90%', marginTop: '5%'}} src={require('../img/dead_link.jpg')}></img>
                 
             </div>
          );

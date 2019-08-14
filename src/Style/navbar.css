@@ -1,52 +1,118 @@
+/*Phone view*/
 .navContainer {
     background-image: linear-gradient(to right,#000000, #E84393) ;
-    height: 9vh;
-    position: sticky;
-    top: 0;
+    height: 50px;
     border-bottom: 1px solid black;
     margin: 0%;
     padding: 0%;
+    transition: all 0.25s ease-out;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
-
 ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   
-}
-
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+ }
 li {
-   float: right;
+    text-align: left;
+    padding: 1%
 }
 
-li i {
+ .navlink {
+     display: none;
+     
+ }
+
+ .logIcon {
+     display: none;
+ }
+
+ .menuIcon {
+    float: right;
     display: block;
+    font-size: 150%;
+    color: white;
+    padding: 3%;
+    padding-right: 8%;
+    
+ }
+ .navTitle {
     font-size: 200%;
-    text-align: center;
-    padding: 14px 0px;   
-    color: white;
-    
-}
-
-a{
-    display: block;
-    text-decoration: none;
-    font-size: 175%;
-    text-align: center;
-    padding: 14px 10px; 
-    padding-right: 30px;  
-    color: white;
-    
-}
-
-a:hover {
-    color: orangered;
-}
-
-.navTitle {
-    font-size: 120%;
     float: left;
     font-weight: 700;
-    padding-left: 30px
+    display: block;
+    margin-left: 5%;
+    text-align: center;
+    padding: 1%;   
+    color: white;
     
+}
+.phoneView {
+    color: white;
+    text-decoration: none;
+    margin: 6%;
+    font-size: 150%
+}
+
+/*Tablet view*/
+@media only screen and (min-width: 768px) {}
+/*Desktop view*/
+@media only screen and (min-width: 1033px){
+    .navContainer {
+        position: sticky;
+        height: 70px;
+        top: 0;
+    }
+    .container2 {
+        display: none
+    }
+    
+    li {
+       float: right;
+       padding: 0%;
+    }
+    
+    li i {
+        display: block;
+        font-size: 200%;
+        text-align: center;
+        padding: 14px 0px;   
+        color: white;
+        
+    }
+    
+    a{
+        display: block;
+        text-decoration: none;
+        font-size: 175%;
+        text-align: center;
+        padding: 14px 10px; 
+        padding-right: 30px;  
+        color: white;
+        
+    }
+    
+    a:hover {
+        color: orangered;
+    }
+    
+    .navTitle {
+        font-size: 120%;
+        padding: 0%;        
+    }
+    .navlink {
+        display: block;
+    }
+   
+    .logIcon {
+        display: block;
+    }
+   
+    .menuIcon {
+       display: none;
+       
+    }
 }

@@ -10,11 +10,10 @@ img {
 }
 
 .slogan {
-    font-size: 400%;
+    font-size: 220%;
     font-weight: 600;
-    float: left;
-    padding: 3%;
-    padding-left: 100px;
+    float: center;
+    padding: 2%;
     flex: 1;
 }
 .footer {
@@ -25,5 +24,20 @@ img {
     margin-top: 5%;
 }
 .question{
-    font-size: 200%
+    font-size: 150%
+}
+
+/*Tablet view*/
+@media only screen and (min-width: 768px) {}
+/*Desktop view*/
+@media only screen and (min-width: 1033px){
+    .slogan {
+        font-size: 400%;
+        float: left;
+        padding: 3%;
+        padding-left: 100px;
+    }
+    .question{
+        font-size: 200%
+    }
 }

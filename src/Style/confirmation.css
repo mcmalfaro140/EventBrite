@@ -6,12 +6,15 @@
     margin-top: 10%;
 }
 
-.btn {
-    width: 15%;
-    align-self: center;
-}
 
 h1 {
     padding: 0%;
     margin: 0%;
+}
+
+/*Tablet view*/
+@media only screen and (min-width: 768px) {}
+/*Desktop view*/
+@media only screen and (min-width: 1033px){
+    
 }
