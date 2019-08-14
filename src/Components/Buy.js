@@ -41,7 +41,7 @@ class Buy extends React.Component {
     
     render() { 
         //If the event is free, this is what the app is gonna render
-        if(this.props.location.state.event.isfree === true) {
+        if(this.props.location.state.event.isfree === 1) {
             return (  
                 <div>
                     <div className="buyContainer">
